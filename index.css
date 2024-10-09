@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: (#ffffff);
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    border-left: 500px solid black;
+    /* Borda esquerda */
+    border-right: 500px solid black;
+    /* Borda direita */
+    padding: 0 10px;
+    /* Espaçamento interno para que o conteúdo não toque as bordas */
+    height: 100%;
+    /* Define a altura do container como 100% da altura da viewport */
+}
+
+.content {
+    max-width: 800px;
+    /* Define a largura máxima do conteúdo */
+    margin: 0 auto;
+    /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+    /* Adiciona espaçamento interno ao conteúdo */
+    background: #ffffff;
+    /* Cor de fundo do conteúdo */
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+ul {
+    background: black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    width: 150px;
+}
+
+.dropdown-content a {
+    color: blue;
+    display: block;
+    text-align: left;
+    border: 1px solid rgb(122, 122, 122);
+
+}
+
+.dropdown-content a:hover {
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
