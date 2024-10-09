@@ -90,3 +90,21 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    /* Remove espaço entre as bordas */
+    border: 1px solid #000;
+    /* Borda da tabela */
+}
+
+th,
+td {
+    border: 1px solid #000;
+    /* Borda para cabeçalhos e células */
+    padding: 5px;
+    /* Espaçamento interno */
+    text-align: left;
+    /* Alinhamento à esquerda */
+}
