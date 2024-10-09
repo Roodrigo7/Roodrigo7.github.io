@@ -124,7 +124,7 @@ ul li a {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background: linear-gradient(45deg, #0000FF, #00BFFF, #87CEFA)
     /* Cor de fundo ao passar o mouse sobre o link */
 }
 
@@ -134,6 +134,6 @@ ul li a {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #555;
+    background: linear-gradient(45deg, #0000FF, #00BFFF, #87CEFA)
     /* Muda a cor do fundo do botão ao passar o mouse */
 }
