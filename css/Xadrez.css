@@ -43,7 +43,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background: red;
+    background: linear-gradient(45deg, #0000FF, #00BFFF, #87CEFA);
 }
 
 li.dropdown {
