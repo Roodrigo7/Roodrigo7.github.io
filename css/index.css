@@ -13,8 +13,8 @@ body {
 }
 
 .container {
-    border-left: 100%px solid black;
-    border-right: 100%px solid black;
+    border-left: 100% solid black;
+    border-right: 100% solid black;
     padding: 0 10px;
     height: 100%;
 }
