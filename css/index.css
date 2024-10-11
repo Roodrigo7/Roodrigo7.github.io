@@ -182,3 +182,23 @@ img {
     display: block;
     /* Remove espaçamento em torno da imagem */
 }
+
+.placeholder {
+    width: 70%;
+    /* Define a largura do espaço */
+    height: 243px;
+    /* Define a altura do espaço */
+    /*background-color: lightgray;*/
+    /* Define a cor de fundo para visualização */
+    /*border: 2px dashed black;*/
+    /* Um estilo de borda para destacar a área */
+    bottom: 0;
+    /* Fixa no rodapé da tela */
+    left: 10px;
+    /* Centraliza horizontalmente */
+    right: 0px;
+    transform: translateX(50%);
+    /* Ajusta para centralizar a div */
+    z-index: 500;
+    /* Garante que ela fique acima de outros elementos, se necessário */
+}
