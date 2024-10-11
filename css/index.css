@@ -197,7 +197,7 @@ img {
     left: 10px;
     /* Centraliza horizontalmente */
     right: 0px;
-    transform: translateX(20%);
+    transform: translateX(-10%);
     /* Ajusta para centralizar a div */
     z-index: 500;
     /* Garante que ela fique acima de outros elementos, se necessário */
