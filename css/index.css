@@ -170,6 +170,7 @@ td {
         bottom: 10px;
         /* Ajustando a posição mais perto do canto */
         right: 10px;
+        z-index: 100;
     }
 }
 
