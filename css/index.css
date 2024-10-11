@@ -152,6 +152,27 @@ td {
     }
 }
 
+.escola-button {
+    position: fixed;
+    bottom: 20px;
+    right: 500px;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+}
+
+/* Estilo para telas menores (dispositivos móveis) */
+@media screen and (max-width: 600px) {
+    .fixed-button {
+        width: 40px;
+        /* Diminuindo o tamanho da imagem no celular */
+        height: 40px;
+        bottom: 10px;
+        /* Ajustando a posição mais perto do canto */
+        right: 10px;
+    }
+}
+
 img {
     max-width: 130%;
     /* A largura máxima da imagem será 100% do contêiner pai */
