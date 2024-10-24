@@ -70,51 +70,33 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-   
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    
     padding-top: 60px;
-    
     display: flex;
-   
     justify-content: center;
-   
     align-items: center;
-   
     overflow: hidden;
-   
     overflow-y: scroll;
-  
-
 }
 
 nav {
     position: fixed;
- 
     top: 0;
-  
     left: 0;
-
     width: 100%;
-
     z-index: 1000;
-
 }
 
 .card {
     margin-top: -50%;
-  
     background: rgba(255, 255, 255, 0.5);
     padding: 40px;
     width: 450px;
- 
     max-width: 1200px;
- 
     box-shadow: 0 2px 15px red;
     border-radius: 8px;
- 
     min-height: 300px;
   
 }
@@ -123,13 +105,9 @@ nav {
     justify-content: center;
     align-items: center;
     display: flex;
-    /* Usar flexbox para alinhar o ícone e o título */
     align-items: center;
-    /* Alinhar verticalmente */
     justify-content: center;
-    /* Centralizar horizontalmente */
     margin-bottom: 20px;
-    /* Espaço abaixo do header */
     font-size: 25px;
 }
 
@@ -137,9 +115,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 33px;
- 
     margin-right: 10px;
- 
     align-items: center;
     text-align: center;
 }
@@ -167,7 +143,6 @@ label {
 
 .botao {
     width: 100%;
-
     background: white;
     box-shadow: inset 0 0 25px red;
     color: rgb(0, 0, 0);
@@ -193,13 +168,9 @@ label {
 .lock {
     position: absolute;
     right: 7px;
- 
     top: 30%;
- 
     transform: translateY(-50%);
-   
     font-size: 18px;
- 
     color: #aaa;
   
 }
@@ -207,12 +178,9 @@ label {
 .email {
     position: absolute;
     right: 10px;
-   
     top: 50%;
     transform: translateY(-50%);
- 
     font-size: 18px;
- 
     color: white;
   
 }
@@ -220,13 +188,8 @@ label {
 .login {
     position: absolute;
     right: 7px;
-    
     top: 30%;
-  
     transform: translateY(-50%);
-   
     font-size: 18px;
-
     color: #aaa;
-  
 }
