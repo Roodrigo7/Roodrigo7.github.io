@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    /* Corrigido o uso de background */
 }
 
 .content {
@@ -78,7 +77,6 @@ li.dropdown {
 
 table {
     width: 100%;
-    /* Aumentei para 100% para ocupar a tela em dispositivos menores */
     border-collapse: collapse;
     border: 1px solid #000;
 }
@@ -90,11 +88,9 @@ td {
     text-align: left;
 }
 
-/* Media Queries para Responsividade */
 @media (max-width: 1024px) {
     .container {
         border-left: 300px solid black;
-        /* Ajusta bordas para telas médias */
         border-right: 300px solid black;
     }
 }
@@ -102,34 +98,27 @@ td {
 @media (max-width: 768px) {
     .container {
         border-left: 100px solid black;
-        /* Ajusta bordas para telas menores */
         border-right: 100px solid black;
         padding: 0 5px;
     }
 
     ul {
         display: flex;
-        /* Altera o menu para flexbox em telas pequenas */
         flex-direction: column;
-        /* Menu em coluna */
     }
 
     li {
         float: none;
-        /* Remove o float em telas pequenas */
     }
 
     li a {
         width: 100%;
-        /* Faz o link ocupar toda a largura */
         padding: 10px 0;
-        /* Reduz o espaçamento */
         text-align: center;
     }
 
     table {
         width: 100%;
-        /* Garante que a tabela ocupe 100% da largura da tela */
     }
 }
 
@@ -137,18 +126,15 @@ td {
     .container {
         border-left: none;
         border-right: none;
-        /* Remove as bordas em dispositivos muito pequenos */
     }
 
     h1,
     h2 {
         font-size: 1.5rem;
-        /* Ajusta o tamanho da fonte para telas pequenas */
     }
 
     li a {
         padding: 8px 0;
-        /* Reduz ainda mais o espaçamento dos links */
     }
 }
 
@@ -161,14 +147,11 @@ td {
     z-index: 100;
 }
 
-/* Estilo para telas menores (dispositivos móveis) */
 @media screen and (max-width: 600px) {
     .fixed-button {
         width: 40px;
-        /* Diminuindo o tamanho da imagem no celular */
         height: 40px;
         bottom: 10px;
-        /* Ajustando a posição mais perto do canto */
         right: 10px;
         z-index: 100;
     }
@@ -176,29 +159,16 @@ td {
 
 img {
     max-width: 130%;
-    /* A largura máxima da imagem será 100% do contêiner pai */
     height: auto;
-    /* A altura será ajustada automaticamente, mantendo a proporção */
     display: block;
-    /* Remove espaçamento em torno da imagem */
 }
 
 .placeholder {
     width: 70%;
-    /* Define a largura do espaço */
     height: 243px;
-    /* Define a altura do espaço */
-    /*background-color: lightgray;*/
-    /* Define a cor de fundo para visualização */
-    /*border: 2px dashed black;*/
-    /* Um estilo de borda para destacar a área */
     bottom: 0;
-    /* Fixa no rodapé da tela */
     left: 10px;
-    /* Centraliza horizontalmente */
     right: 0px;
     transform: translateX(20%);
-    /* Ajusta para centralizar a div */
     z-index: 500;
-    /* Garante que ela fique acima de outros elementos, se necessário */
 }
