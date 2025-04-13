@@ -1,143 +1,337 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xadrez</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <meta name="description"
-        content="Site oficial do Campeonato de Xadrez 2024 e Feira de Tecnologia. Confira datas, regras e participe!">
-    <meta name="keywords"
-        content="xadrez, campeonato, feira de tecnologia, 2024, xadrez competitivo, torneio de xadrez, inovação tecnológica">
-    <meta name="author" content="Rodrigo">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Green Generation - Inovação Sustentável</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #272727;
+            color: #000000;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        nav {
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 50px;
+            background: #0a3d28;
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 12px 30px;
+            border-radius: 50px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #28a745;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            font-size: 100px;
+            font-weight: bold;
+            color: #00b200;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            background: #0a3d28;
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1494970187445-47a0587b16e9') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+            background-attachment: fixed;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            letter-spacing: 3px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out 0.5s forwards;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Modificação de fonte para frases com 50px */
+        .frase-grande {
+            font-family: 'Oswald', sans-serif;
+            font-size: 50px;
+        }
+        
+        section {
+            padding: 80px 20px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.6s ease;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #sobre {
+            background-color: #2d7f2b; /* Verde mais suave */
+            color: white;
+        }
+
+        #tipos {
+            background-color: #2a2a2a;
+            color: white;
+        }
+
+        #grafico {
+            background-color: #343434;
+            color: white;
+        }
+
+        #contato {
+            background-color: #3a3a3a;
+            color: white;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Green Generation</div>
+        <div class="menu">
+            <a href="#sobre">Sobre</a>
+            <a href="http://127.0.0.1:5500/cursos.html#Topico%202">Book Hardwares</a>
+            <a href="#Curso">Curso</a>
+        </div>
+    </nav>
 
-<body style="font-size: 18px;">
-    <div class="container">
-        <div class="content">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicial</a></li>
-                    <li><a href="xadrez.html">Xadrez</a></li>
-                    <li><a href="capitalismo.html">Historia da produção</a></li>
-                    <li><a href="https://github.com/Roodrigo7/Roodrigo7.github.io">Fonte</a></li>
-                    <li><a href="https://www.python.org/">Phyton</a></li>
-                    <li><a href="https://www.youtube.com/@JoseAlberto">Êxodos</a></li>
-                    <li class="dropdown">
-                        <a class="dropbtn" href="participante.html">Participantes</a>
-                        <div class="dropdown-content">
-                            <a href="inscricao.html">Inscrição</a>
-                            <a href="premiacao.html">Premiação</a>
-                            <a href="https://forms.gle/LL6PRG2619JqCj5f6">Formulario</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+    <!-- Header -->
+    <header>
+        <div>
+            <h1 class="frase-grande">Transformando o Futuro com Sustentabilidade</h1>
+            <p>Inovações que ajudam o planeta com soluções sustentáveis para a tecnologia.</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+    </header>
+    
+    <style>
+        section {
+            padding: 80px 20px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.6s ease;
+        }
 
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-            <h1>Campeonato de Xadrez</h1>
+        #sobre {
+            background-color: #2d7f2b; /* Verde mais suave */
+            color: white;
+        }
 
-            <p><b>Bem-Vindo ao Campeonato de xadrez</b></p>
+        #tipos {
+            background-color: #2a2a2a;
+            color: white;
+        }
 
-            <p>Este site será dedicado ao campeonato de xadrez. Nele, você terá a oportunidade de ganhar prêmios em
-                dinheiro, entre
-                outros. Os links o direcionarão para as páginas necessárias para inscrição, prêmios e outras informações
-                relevantes.
-                Acesse agora e comece a participar do campeonato de xadrez!</p>
+        #grafico {
+            background-color: #343434;
+            color: white;
+        }
 
-            <h3>Integrantes do grupo</h3>
+        #contato {
+            background-color: #3a3a3a;
+            color: white;
+        }
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Série</th>
-                        <th>Número</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Agatha</td>
-                        <td>1ºC </td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Arthur</td>
-                        <td>1ºC </td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>Eduardo</td>
-                        <td>1ºC </td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>Laura</td>
-                        <td>1ºC </td>
-                        <td>17</td>
-                    </tr>
-                    <tr>
-                        <td>Lívia</td>
-                        <td>1ºC </td>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>Lorenna Gabriely</td>
-                        <td>1ºC </td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>Manuela</td>
-                        <td>1ºC </td>
-                        <td>23</td>
-                    </tr>
-                    <tr>
-                        <td>Maria Eduarda Gomes</td>
-                        <td>1ºC </td>
-                        <td>24</td>
-                    </tr>
-                    <tr>
-                        <td>Mariana Nunes</td>
-                        <td>1ºC </td>
-                        <td>28</td>
-                    </tr>
-                    <tr>
-                        <td>Paulo Raphael</td>
-                        <td>1ºC </td>
-                        <td>34</td>
-                    </tr>
-                    <tr>
-                        <td>Rodrigo</td>
-                        <td>1ºC </td>
-                        <td>36</td>
-                    </tr>
-                    <tr>
-                        <td>Ryan</td>
-                        <td>1ºC </td>
-                        <td>37</td>
-                    </tr>
-                    <tr>
-                        <td>Thayna</td>
-                        <td>1ºC </td>
-                        <td>40</td>
-                    </tr>
-                </tbody>
-            </table><br><br>
-            <img style="margin-left: -2px;"
-                src="https://www.avare.sp.gov.br/img/novidades/d16ed95472ec30b2c65223a96fe056bb.jpg" width="100%">
-            <br>
-            <br>
-            <br>
-            <a href="https://www.instagram.com/escolazeicy/" target="_blank">
-                <img src="./imagem/Logo zeicy.jpeg" alt="Escola" class="escola-button">
-            </a>
-            <div class="placeholder">
-                <a class="link" href="https://www.instagram.com/escolazeicy/" target="_blank">
-                    <img src="./imagem/Logo zeicy.jpeg" alt="Logo Escola Zeicy" class="placeholder"
-                        width="350px height: 243px;">
-                </a>
-            </div>
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+
+    <!-- Seções de Conteúdo -->
+    <section id="sobre">
+        <h2>Sobre a Green Generation</h2>
+        <p>Somos uma empresa dedicada à inovação sustentável, desenvolvendo soluções tecnológicas que beneficiam o meio ambiente. Criamos uma rede de livros para alimentar o conhecimento sobre Hardwares e seu descarte indevido, e como podemos descartar. Junto, criamos um curso sobre conhecimentos gerais de hardawares e seu funcionamento.</p>
+
+        <p></p>
+    </section>
+    
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Se você tem alguma dúvida ou quer saber mais sobre nossos projetos, entre em contato conosco via Gmail.</p>
+    </section>
+
+    <script>
+        // Função para detectar a rolagem da página
+        window.addEventListener('scroll', function() {
+            let sections = document.querySelectorAll('section');
+            let scrollY = window.scrollY;
+
+            sections.forEach(function(section) {
+                let sectionTop = section.offsetTop;
+                let sectionHeight = section.clientHeight;
+
+                // Verifica se a seção está visível na tela
+                if (scrollY + window.innerHeight > sectionTop + 100) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+
+    <style>
+        #contato {
+            background-color: #282828;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        #contato form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contato input, #contato textarea {
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 50px; /* Caixas arredondadas */
+            font-size: 1rem;
+            width: 100%;
+            transition: border 0.3s;
+        }
+
+        #contato input:focus, #contato textarea:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+        #contato button {
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #contato button:hover {
+            background-color: #218838;
+        }
+    </style>
+
+    <section id="contato">
+        <h2>Mande um Gmail</h2>
+        <form action="#">
+            <input type="text" placeholder="Seu nome" required />
+            <input type="email" placeholder="Seu email" required />
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
-
 </html>
